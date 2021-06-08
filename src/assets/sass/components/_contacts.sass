@@ -1,0 +1,106 @@
+.contacts
+    padding: 100px 0
+    @media (max-width: 768px)
+        padding: 50px 0
+        
+    &__container
+        position: relative
+        // display: flex
+    &__title
+        margin-bottom: 40px
+    &-block
+        width: 40%
+        padding: 30px 10px 45px 30px
+        border: 1px solid $color-geyser
+        background-color: $color-squeeze
+        @media (max-width: 1044px)
+            width: 50%
+        @media (max-width: 768px)
+            width: 100%
+            padding: 10px
+            padding-top: 20px
+            padding-bottom: 20px
+    &-map  
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 40%
+        @media (max-width: 1044px)
+            left: 50%
+        @media (max-width: 768px)
+            position: relative
+            left: 0
+            height: 193px
+            margin: 20px 0
+        
+
+    &-block__item + .contacts-block__item
+        margin-top: 20px
+    &-block__item
+        font-size: 18px
+        span
+            +circe-bold
+            color: $color-accent
+
+
+    &-social
+        margin: 30px 0
+    
+    &-social__link + .contacts-social__link
+        margin-left: 10px
+        
+    &-social__link
+        max-width: 30px
+        max-height: 30px
+        svg
+            display: inline-block
+            max-width: 30px
+            max-height: 30px
+    &__form
+        display: flex
+        align-items: center
+        @media (max-width: 827px)
+            flex-direction: column
+        .just-validate-tooltip-container
+            width: 100%
+            
+            
+    &__phone
+        
+        min-width: 158px
+        width: 90%
+        padding: 10px 20px
+        margin-right: 10px
+        background-color: $color-white
+        border: 1px solid $color-geyser
+
+        border-radius: 100px  
+        @media (max-width: 827px)
+            width: 100%
+            margin-bottom: 20px
+    &__btn
+        min-width: 154px
+        padding: 12px 16px
+        background-color: $color-accent
+        color: $color-white
+        border-radius: 50px
+        +circe-bold
+
+        white-space: nowrap
+        transition: background-color .4s ease, box-shadow .4s ease
+        &:active
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)
+
+        @media (min-width: 1200px)
+            &:hover
+                background-color: darken($color-accent, 5%)
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)   
+           
+        @media (max-width: 827px)
+            padding: 16px
+            width: 70%
+         
+            
+    
+

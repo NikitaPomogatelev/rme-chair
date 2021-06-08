@@ -1,0 +1,98 @@
+.tape
+    position: fixed
+    // bottom: 0
+    bottom: -50%
+    left: 0
+
+    width: 100%
+    padding: 20px 15px
+    background-color: $color-orange
+
+    transition: bottom .6s ease
+    z-index: 99
+
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-close
+        position: absolute
+        right: 10px
+        top: 10px
+        max-width: 15px
+        max-height: 15px
+        
+        svg
+            max-width: 15px
+            max-height: 15px
+    &-count
+        display: inline-block
+        width: 42px
+
+.tape-top
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    width: 100%
+    margin-bottom: 20px
+    @media (max-width: 716px)
+        flex-wrap: wrap
+    form
+        display: flex
+        flex-shrink: 0
+        @media (max-width: 978px)
+            flex-shrink: 1
+            justify-content: center
+            width: 100%
+        @media (max-width: 524px)
+            flex-direction: column
+
+.tape__title
+    +circe-bold
+    font-size: 20px
+    margin-right: 25px
+    @media (max-width: 978px)
+        max-width: 233px
+        flex-shrink: 0
+    @media (max-width: 716px)
+        margin-bottom: 20px
+        
+.tape__input
+    flex-shrink: 1
+    padding: 10px 20px
+    margin-right: 10px
+    background-color: $color-white
+    border: 1px solid $color-geyser
+    border-radius: 100px 
+    @media (max-width: 524px)
+        width: 100%
+        margin-bottom: 20px
+.tape__btn
+        padding: 12px 35px
+        max-width: 214px
+        background-color: $color-accent
+        color: $color-white
+        border-radius: 50px
+        +circe-bold
+
+        white-space: nowrap
+        transition: background-color .4s ease, box-shadow .4s ease
+
+        @media (min-width: 1200px)
+            &:hover
+                background-color: darken($color-accent, 5%)
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)   
+            &:active
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)
+        @media (max-width: 768px)
+            padding: 16px
+            width: 70%
+        @media (max-width: 524px)
+            align-self: center
+.tape__descr
+    text-align: center
+.tape__link
+    color: $color-accent
+    text-decoration: underline
+

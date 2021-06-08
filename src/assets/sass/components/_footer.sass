@@ -1,0 +1,20 @@
+.footer
+    // min-height: 75px
+    background-color: $color-tuna
+    padding: 33px 0
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 694px)
+            flex-direction: column
+            text-align: center
+        
+    &__copy
+        display: inline-block
+        +circe-regular
+        font-size: 16px
+        color: $color-white
+        line-height: 22px
+        margin: 25px 0
+    

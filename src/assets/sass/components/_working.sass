@@ -1,0 +1,114 @@
+.working
+    padding: 100px 0 90px
+    background-color: $color-squeeze
+    @media ( max-width: 768px)
+        padding: 50px 0
+    &__title
+        text-align: center
+        margin-bottom: 84px
+    &__container
+        display: flex
+        justify-content: space-between
+        @media (max-width: 768px)
+            flex-wrap: wrap
+    &__item
+        position: relative
+        
+        flex-basis: 25%
+        
+        text-align: center
+        width: 31%
+
+        z-index: 1
+
+        @media (max-width: 768px)
+            flex-basis: 48%
+            margin-bottom: 50px
+
+        
+        &:not(:last-child)
+            &::after
+                content: ''
+                position: absolute
+                right: -15%
+                top: 5%
+                width: 81px
+                height: 15px
+                background: url('../../assets/img/sprite.svg#working-arrow')
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: cover
+
+                // transform: translateX(-20%)
+                @media ( max-width: 996px )
+                    right: -22%
+                @media ( max-width: 436px )
+                    right: -25%
+                    width: 57px
+                
+            &:nth-last-of-type(2n - 1)
+                &::after
+                    @media (max-width: 768px)
+                        width: 0
+                        height: 0
+                        background: none
+                        
+            
+                    
+               
+                
+                
+
+                
+            
+    &__circle
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        width: 74px
+        height: 74px
+        background-color: $color-orange
+        border-radius: 50%
+
+        z-index: -1
+    &__image
+        position: relative
+        margin: 0 auto
+        max-width: 31px
+        max-height: 31px
+        margin-bottom: 32px
+
+        z-index: 2
+        svg
+            display: inline-block
+            max-width: 31px
+            max-height: 31px
+    &__num
+        position: absolute
+        top: -62%
+        left: -70%
+
+        color: $color-orange
+
+        width: 21px
+        height: 21px
+        background-color: $color-white
+        border: 1px solid darken($color-squeeze, 10%)
+
+        +circe-bold
+        font-size: 14px
+        line-height: 21px
+
+        border-radius: 50%
+        box-shadow: 0px 2px 4px rgba(42, 67, 90, 0.25)
+
+    &__descr
+        font-size: 18px
+        text-align: center
+        margin: 0 auto
+        max-width: 190px
+        z-index: 9
+        @media (max-width: 768px)
+            font-size: 16px

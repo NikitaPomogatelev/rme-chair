@@ -1,0 +1,103 @@
+.price
+    padding: 100px 0
+    background-color: $color-squeeze
+    @media (max-width: 768px)
+        padding: 50px 0
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: start
+        @media (max-width: 768px)
+            flex-direction: column
+            .price__left, .price__right
+                width: 100%
+            
+    &__left
+        width: 48%
+    &__right
+        width: 48%
+
+    &__title
+        text-align: center
+        margin-bottom: 50px
+    &__subtitle
+        +circe-bold
+        font-size: 24px
+
+        margin-bottom: 20px
+        
+            
+
+    &__list-item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        margin-bottom: 18px      
+        
+    &__list-descr
+        display: inline-block
+        +circe-regular
+        font-size: 18px
+        сolor: $color-dark    
+        background-color: $color-white
+        background-clip: content-box
+
+        z-index: 5
+
+
+        @media (max-width: 1155px)
+            max-width: 156px
+            font-size: 14px
+        @media (max-width: 768px)
+            line-height: 14px
+            max-width: 60%
+
+            
+    &__list-field
+        min-width: 20px
+        margin: 0 2px 8px
+        align-self: flex-end
+        flex: 1 1 auto
+        border-bottom: 1px solid $color-geyser
+        @media (max-width: 768px)
+            margin: 9px
+
+            
+        
+    &__list-value
+        
+        align-self: flex-end
+        justify-self: end
+        
+
+        +circe-bold
+        font-size: 18px
+        text-align: right
+        color: $color-accent
+
+        background-color: $color-white
+
+        z-index: 5
+        @media (max-width: 1155px)
+            font-size: 14px
+            
+        
+
+    
+.box
+    padding: 30px
+    border: 1px solid $color-geyser
+    background-color: $color-white
+    @media (max-width: 768px)
+        padding: 25px 21px
+        
+
+.price__left-firstbox,
+.price__right-firstbox
+    margin-bottom: 30px
+
+.price__left-secondbox
+    @media (max-width: 768px)
+        margin-bottom: 30px
+        

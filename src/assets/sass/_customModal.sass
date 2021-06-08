@@ -1,0 +1,85 @@
+.modal__container
+    position: relative
+    max-width: 630px
+    text-align: center
+    padding: 30px
+    border-radius: 0
+    // @media (max-width: 478px)
+    //     padding: 20px
+.modal-close
+    position: absolute
+    right: 4%
+    top: 4%
+    display: block
+    max-width: 14px
+    max-height: 14px
+    
+    margin-left: auto
+    svg
+        display: inline-block
+        fill: currentColor
+        max-width: 14px
+        max-height: 14px
+        overflow: visible
+.modal-title
+    +circe-bold
+    font-size: 35px
+    margin-bottom: 15px
+    @media (max-width: 478px)
+        font-size: 28px
+        
+.modal-descr
+        max-width: 393px
+        margin: 0 auto
+        margin-bottom: 27px
+        font-size: 18px
+        color: $color-gray
+        @media (max-width: 478px)
+            font-size: 16px
+.modal-form
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 368px
+    margin: 0 auto
+    .just-validate-tooltip-container
+        width: 100%
+        
+    input
+        width: 100%
+        padding: 10px 20px
+        margin-bottom: 27px
+
+        font-size: 18px
+
+        border: 1px solid $color-geyser
+        border-radius: 100px
+.modal-btn
+    width: 100%
+    padding: 10px 20px
+    background-color: $color-accent
+    padding: 15px 37px
+    transition: background-color .4s ease, box-shadow .4s ease
+    @media (min-width: 1200px)
+        &:hover
+            background-color: darken($color-accent, 5%)
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)   
+        &:active
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)
+    
+    +circe-bold
+    color: $color-white
+    border-radius: 50px
+    transition: background-color .3s ease
+
+.patent-container
+    max-width: 80%
+    background: transparent
+    .modal-close
+        right: 1%
+        top: 2%
+        svg
+            display: block
+            object-fit: cover
+            fill: $color-white
+            

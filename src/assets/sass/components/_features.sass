@@ -1,0 +1,121 @@
+.features
+    padding-bottom: 100px
+    @media (max-width: 768px)
+        padding: 50px 0
+    &__title
+        text-align: center
+        
+        margin-bottom: 44px
+    
+.features-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 100px
+
+    @media (max-width: 1200px)
+        margin-bottom: 70px
+
+    @media (max-width: 768px)
+        margin-bottom: 40px
+
+    @media (max-width: 738px)
+        flex-wrap: wrap
+        .features-row__item
+            width: 48%
+            margin-bottom: 30px
+            
+            &-test
+                width: 100%
+        
+
+    &__item
+        text-align: center
+        
+            
+    
+    &__image
+        display: inline-block
+        max-width: 114px
+        max-height: 75px
+        margin-bottom: 29px
+        svg
+            max-width: 114px
+            max-height: 75px
+            
+    &__title
+        +circe-bold
+        font-size: 20px
+        max-width: 150px
+
+        margin: 0 auto
+
+        @media ( max-width: 798px )
+            font-size: 18px
+            max-width: 140px
+            
+.banner
+    display: flex
+    align-items: center
+    
+    @media (max-width: 1077px)
+        flex-direction: column
+        .banner__left
+            width: 90%
+            margin-bottom: 40px
+            justify-content: center
+        .banner__left-descr
+            
+            max-width: 367px
+        .banner__right
+            width: 90%
+
+        
+    &__left
+        width: 45%
+        display: flex
+        align-items: center
+        @media (max-width: 768px)
+            text-align: center
+            flex-direction: column
+        
+        
+    &__left-image
+        max-width: 119px
+        max-height: 124px
+        margin-right: 20px
+        svg
+            display: inline-block
+            max-width: 119px
+            max-height: 124px 
+
+        @media (max-width: 768px)
+            margin: 0
+            margin-bottom: 30px
+    &__left-descr
+        +circe-bold
+        font-size: 38px
+        line-height: 120%
+        color: $color-dark
+        span
+            color: $color-orange
+        @media (max-width: 768px)
+            font-size: 28px
+
+    &__right
+        width: 55%
+        padding: 24px 50px
+        
+        background-color: $color-tuna
+        color: $color-white
+    &__right-descr
+        +circe-regular
+        font-size: 26px
+        line-height: 120%
+        span
+            color: $color-orange
+        @media (max-width: 1200px)
+            text-align: center
+        @media (max-width: 768px)
+            font-size: 18px 
+

@@ -1,0 +1,143 @@
+.header
+    margin-bottom: 25px
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-height: 74px
+
+        padding-top: 30px
+
+        @media (max-width: 570px)
+            flex-direction: column-reverse
+        @media (max-width: 330px)
+            padding-left: 10px
+            padding-right: 10px
+                
+    
+    &__right
+        display: flex
+        align-items: baseline
+        flex-wrap: nowrap
+
+        @media (max-width: 570px)
+            justify-content: space-between
+            width: 100%
+            margin-bottom: 13px
+
+        
+.logo
+    display: inline-block
+    width: 128px
+    height: 74px
+    svg
+        width: 100%
+        height: 100%       
+
+.header    
+    &-phone
+        position: relative
+
+        display: flex
+        flex-direction: column
+        align-self: start
+        
+        margin: 0 20px
+        margin-bottom: 3px
+
+        max-width: 198px
+
+        padding-left: 35px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+
+            display: inline-block
+            width: 20px
+            height: 20px
+
+           
+
+            background-image: url('../../assets/img/sprite.svg#phone-icon')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+
+        @media (max-width: 570px)
+            margin: 0
+   
+
+        &__number
+            +circe-bold
+            font-size: 22px
+
+            @media (max-width: 570px)
+                font-size: 18px
+                
+        &__email
+            +circe-regular
+            color: $color-dark
+            font-size: 16px
+
+            @media (max-width: 570px)
+                font-size: 13px
+
+    &__btn
+        display: inline-flex
+        max-width: 100% 
+        padding: 8px 18px
+
+        +circe-bold
+        color: $color-accent
+        
+        font-size: 16px
+        white-space: nowrap
+        
+        
+        border: 2px solid $color-accent
+        border-radius: 50px
+        transition: box-shadow .3s ease
+        &:active
+            box-shadow: 0 4px 15px rgba(50,101,177,.35)
+        @media (min-width: 1200px)
+            &:hover
+                box-shadow: 0 4px 15px rgba(50,101,177,.35)
+        
+            
+
+        @media (max-width: 570px)
+            padding: 6px
+            margin-right: 10px
+            font-size: 12px
+    &__item
+        max-width: 22px
+        max-height: 22px
+        svg
+            display: inline-block
+            max-width: 22px
+            max-height: 22px
+
+    &__item + .header__item
+        margin-left: 15px
+            
+    &__contacts
+        display: flex
+        align-items: center
+
+        @media (max-width: 738px)
+            display: none
+
+    
+
+        
+
+    
+
+        
+
+        
+
+
+
