@@ -2,8 +2,9 @@ import Swiper, { Navigation, Pagination, Autoplay, EffectFade, Thumbs} from 'swi
 
 Swiper.use([Navigation, Autoplay, EffectFade, Pagination, Thumbs]);
 
+const safetySlider = () => {
 
-const safetySlider = new Swiper('.safety-slider', {
+  const safetySwiper = new Swiper('.safety-slider', {
     slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
@@ -48,6 +49,13 @@ const safetySlider = new Swiper('.safety-slider', {
     }
 
   });
+
+}
+
+export default safetySlider;
+
+
+
   
 
 

@@ -1,4 +1,4 @@
-class Modal {
+export default class Modal {
 	constructor(options) {
 		let defaultOptions = {
 			isOpen: () => {},
@@ -156,12 +156,3 @@ class Modal {
 	}
 }
 
-const modal = new Modal({
-	isOpen: (modal) => {
-		console.log(modal);
-		console.log('opened');
-	},
-	isClose: () => {
-		console.log('closed');
-	},
-});

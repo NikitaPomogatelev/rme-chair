@@ -5,11 +5,10 @@ Swiper.use([Navigation, Autoplay, EffectFade, Thumbs]);
 
 // document.querySelectorAll('.feedback__main-block').forEach(n => {
 //   const thumbs = new Swiper(n.querySelector('.main-thumbs'), {
+//     slidesPerView: 3,
 //     spaceBetween: 10,
 //     centeredSlides: true,
- 
 //     slideToClickedSlide: true,
-//     slidesPerView: 3,
 //   });
 
 //   const slider = new Swiper(n.querySelector('.main-top'), {
@@ -24,7 +23,8 @@ Swiper.use([Navigation, Autoplay, EffectFade, Thumbs]);
 //   });
 // });
 
-const mainThumbs1 = new Swiper('.main-thumbs-1', {
+const feedbackThumbsSlider = () => {
+  const mainThumbs1 = new Swiper('.main-thumbs-1', {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
@@ -142,16 +142,11 @@ const mainThumbs3 = new Swiper('.main-thumbs-3', {
 const mainTopSlide3 = new Swiper('.main-top-3', {
   slidesPerView: 1,
   loop: true,
-
   effect: 'fade',
     fadeEffect: {
       crossFade: true
     },
-
   centeredSlides: true,
-  
-  
-
   speed: 1500,
     autoplay: {
       delay: 2000,
@@ -167,7 +162,9 @@ const mainTopSlide3 = new Swiper('.main-top-3', {
     swiper: mainThumbs3
   },
 
-  
-
 });
+}
+export default feedbackThumbsSlider;
+
+
     

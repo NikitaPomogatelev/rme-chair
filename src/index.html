@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RME | Ремонт массажных кресел</title>
-    <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png">
@@ -13,7 +13,11 @@
     <link rel="mask-icon" href="./assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
@@ -25,21 +29,21 @@
             <div class="header__right">
                 <ul class="header__contacts">
                     <li class="header__item">
-                        <a href="#" class="header__link" aria-label="whatsapp"> 
+                        <a href="#" class="header__link" aria-label="Перейти в whatsapp">
                             <svg>
                                 <use xlink:href="assets/img/sprite.svg#whatsapp"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link" aria-label="viber">
+                        <a href="#" class="header__link" aria-label="Перейти в viber">
                             <svg>
                                 <use xlink:href="assets/img/sprite.svg#viber"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link" aria-label="skype">
+                        <a href="#" class="header__link" aria-label="Перейти в skype">
                             <svg>
                                 <use xlink:href="assets/img/sprite.svg#skype"></use>
                             </svg>
@@ -52,26 +56,28 @@
                             </svg>
                         </a>
                     </li>
-                    
+
 
                 </ul>
                 <div class="header-phone">
                     <a href="tel:89998446307" class="header-phone__number">8 999 844 63 07</a>
                     <a href="mailto:info@kreslaremont.ru" class="header-phone__email">info@kreslaremont.ru</a>
                 </div>
-                <button class="header__btn" data-path="first" data-animation="fadeIn" data-speed="700">Обратный звонок</button>
+                <button class="header__btn" data-path="first" data-animation="fadeIn" data-speed="700">Обратный
+                    звонок</button>
             </div>
         </div>
     </header>
 
     <main>
- 
+
         <section class="hero-section">
-        <div class="container hero-section__container">
+            <div class="container hero-section__container">
                 <div class="hero-section__about">
                     <h1 class="hero-section__title">Ремонт и обслуживание массажных кресел в Санкт-Петербурге</h1>
                     <p class="hero-section__descr">Мастер приезжает в течении 30 минут</p>
-                    <button class="hero-section__btn" data-path="first" data-animation="fadeIn" data-speed="700">Оставить заявку</button>
+                    <button class="hero-section__btn" data-path="first" data-animation="fadeIn"
+                        data-speed="700">Оставить заявку</button>
                 </div>
 
                 <div class="hero-section__slider">
@@ -80,21 +86,24 @@
                             <div class="hero-section__slider-inner">
                                 <span class="hero-section__slider-count">01</span>
                                 <h5 class="hero-section__slider-title">Ремонт механических частей масажных кресел</h5>
-                                <p class="hero-section__slider-descr">Ремонт подвижных частей масажного кресла: мотор, ролики. </p>
+                                <p class="hero-section__slider-descr">Ремонт подвижных частей масажного кресла: мотор,
+                                    ролики. </p>
                             </div>
                         </div>
                         <div class="hero-section__slider-item swiper-slide">
                             <div class="hero-section__slider-inner">
                                 <span class="hero-section__slider-count">02</span>
                                 <h5 class="hero-section__slider-title">Ремонт электрических частей масажных кресел</h5>
-                                <p class="hero-section__slider-descr">Ремонт электроплаты, электродвигатели, пайка, полная замена плат</p>
+                                <p class="hero-section__slider-descr">Ремонт электроплаты, электродвигатели, пайка,
+                                    полная замена плат</p>
                             </div>
                         </div>
                         <div class="hero-section__slider-item swiper-slide">
                             <div class="hero-section__slider-inner">
                                 <span class="hero-section__slider-count">03</span>
                                 <h5 class="hero-section__slider-title">Перетяжка массажного кресла</h5>
-                                <p class="hero-section__slider-descr">Частичная и полную замену обивки  из любого материала: кожа, эко кожа, велюр.</p>
+                                <p class="hero-section__slider-descr">Частичная и полную замену обивки из любого
+                                    материала: кожа, эко кожа, велюр.</p>
                             </div>
                         </div>
                     </div>
@@ -108,34 +117,47 @@
                         <svg>
                             <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
                         </svg>
-                    </div>  
+                    </div>
 
                 </div>
 
                 <div class="hero-section__image-wrapper">
                     <div class="hero-section__image">
                         <picture>
-                            <img src="./assets/img/hero-chair.png" srcset="./assets/img/hero-chair@2x.png 2x, ./assets/img/hero-chair@3x.png 3x," alt="Кресло">
+
+                            <source type="image/webp"
+                                srcset="./assets/img/hero-chair.webp 1x, ./assets/img/hero-chair@2x.webp 2x, ./assets/img/hero-chair@3x.webp 3x">
+                            <img src="./assets/img/hero-chair.png" width="680" height="659" alt="Кресло"
+                                srcset="./assets/img/hero-chair@2x.png 2x, ./assets/img/hero-chair@3x.png 3x" />
                         </picture>
-                        <button class="circle hero-section__circle-one" data-tippy-content="Замена обшивки полная и частичная"></button>
-                        <button class="circle hero-section__circle-two" data-tippy-content="Ремонт передвижных механизмов кресла"></button>
-                        <button class="circle hero-section__circle-three" data-tippy-content="Ремонт электропроводки и электроники массажного кресла"></button>
-                        <button class="circle hero-section__circle-four" data-tippy-content="Ремонт роликовых механизмов ног, рук, спины, шеи"></button>
-                        <button class="circle hero-section__circle-five" data-tippy-content="Ремонт пульта управления массажного кресла"></button>
-                        <button class="circle hero-section__circle-six" data-tippy-content="Замена обшивки полная и частичная"></button>
-                        <button class="circle hero-section__circle-seven" data-tippy-content="Ремонт воздушно компрессионных частей кресла в районе плеч, спины, ягодиц, поясницы, рук, ног"></button>
-                        <button class="circle hero-section__circle-eight" data-tippy-content="Ремонт пульта управления массажного кресла"></button>
-                        
-                        
-                        
+
+                        <button class="circle hero-section__circle-one"
+                            data-tippy-content="Замена обшивки полная и частичная"></button>
+                        <button class="circle hero-section__circle-two"
+                            data-tippy-content="Ремонт передвижных механизмов кресла"></button>
+                        <button class="circle hero-section__circle-three"
+                            data-tippy-content="Ремонт электропроводки и электроники массажного кресла"></button>
+                        <button class="circle hero-section__circle-four"
+                            data-tippy-content="Ремонт роликовых механизмов ног, рук, спины, шеи"></button>
+                        <button class="circle hero-section__circle-five"
+                            data-tippy-content="Ремонт пульта управления массажного кресла"></button>
+                        <button class="circle hero-section__circle-six"
+                            data-tippy-content="Замена обшивки полная и частичная"></button>
+                        <button class="circle hero-section__circle-seven"
+                            data-tippy-content="Ремонт воздушно компрессионных частей кресла в районе плеч, спины, ягодиц, поясницы, рук, ног"></button>
+                        <button class="circle hero-section__circle-eight"
+                            data-tippy-content="Ремонт пульта управления массажного кресла"></button>
+
+
+
                     </div>
                 </div>
-                
 
-        </div>
-        
 
-        </section> 
+            </div>
+
+
+        </section>
 
 
         <section class="features">
@@ -144,9 +166,9 @@
                 <div class="features-row">
                     <div class="features-row__item">
                         <div class="features-row__image">
-                        <svg>
-                            <use xlink:href="assets/img/sprite.svg#feature-1"></use>
-                        </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#feature-1"></use>
+                            </svg>
                         </div>
                         <h6 class="features-row__title">Опытные мастера</h6>
                     </div>
@@ -184,21 +206,24 @@
                     </div>
                 </div>
 
-        
-                    <article class="banner features-banner">
-                        <div class="banner__left features-banner__left">
-                            <div class="banner__left-image features-banner__left-image">
-                                <svg>
-                                    <use xlink:href="assets/img/sprite.svg#rocket"></use>
-                                </svg>
-                            </div>
-                            <h4 class="banner__left-descr features-banner__left-descr"> <span>Срочный</span> выездной и сервисный ремонт</h4>
+
+                <article class="banner features-banner">
+                    <div class="banner__left features-banner__left">
+                        <div class="banner__left-image features-banner__left-image">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#rocket"></use>
+                            </svg>
                         </div>
-                        <div class="banner__right features-banner__right">
-                            <h4 class="banner__right-descr features-banner__right-descr">При заказе выездного мастера, <span>более 87%</span> ремонта заканчивается на месте без доставки кресла в сервисный центр. </h4>
-                        </div>
-                    </article>
-            
+                        <h4 class="banner__left-descr features-banner__left-descr"> <span>Срочный</span> выездной и
+                            сервисный ремонт</h4>
+                    </div>
+                    <div class="banner__right features-banner__right">
+                        <h4 class="banner__right-descr features-banner__right-descr">При заказе выездного мастера,
+                            <span>более 87%</span> ремонта заканчивается на месте без доставки кресла в сервисный центр.
+                        </h4>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -219,7 +244,7 @@
                                 <div class="price__list-field"></div>
                                 <span class="price__list-value">от 1800 ₽</span>
                             </li>
-                        
+
                         </ul>
                     </div>
                     <div class="box price__left-secondbox">
@@ -290,7 +315,7 @@
                                 <div class="price__list-field"></div>
                                 <span class="price__list-value">от 2400 ₽</span>
                             </li>
-                        
+
                         </ul>
                     </div>
                 </div>
@@ -363,7 +388,7 @@
                                 <div class="price__list-field"></div>
                                 <span class="price__list-value">от 2900 ₽</span>
                             </li>
-                        
+
                         </ul>
                     </div>
                     <div class="box price__right-secondbox">
@@ -379,7 +404,7 @@
                                 <div class="price__list-field"></div>
                                 <span class="price__list-value">от 5000 (зависит от материала)</span>
                             </li>
-                        
+
                         </ul>
                     </div>
                 </div>
@@ -399,7 +424,8 @@
                             </svg>
                         </div>
                         <h3 class="safety-row__subtitle">Выезд</h3>
-                        <p class="safety-row__descr">Выезд ремонтной бригады в пределах МКАД <span>800 ₽</span>  После МКАД <span>30 ₽/км</span> </p>
+                        <p class="safety-row__descr">Выезд ремонтной бригады в пределах МКАД <span>800 ₽</span> После
+                            МКАД <span>30 ₽/км</span> </p>
                     </div>
                     <div class="safety-row__item">
                         <div class="safety-row__image">
@@ -408,7 +434,7 @@
                             </svg>
                         </div>
                         <h3 class="safety-row__subtitle">Оплата</h3>
-                        <p class="safety-row__descr"><span>Безналичный рассчет</span>  по счету
+                        <p class="safety-row__descr"><span>Безналичный рассчет</span> по счету
                             для юр. и физ. лиц
                             <span>Наличный рассчет</span></p>
                     </div>
@@ -419,7 +445,8 @@
                             </svg>
                         </div>
                         <h3 class="safety-row__subtitle">Гарантия</h3>
-                        <p class="safety-row__descr"><span>Даем гарантию</span> на все виды работ Предоставляем <span>чеки</span> и перечень выполненых работ</p>
+                        <p class="safety-row__descr"><span>Даем гарантию</span> на все виды работ Предоставляем
+                            <span>чеки</span> и перечень выполненых работ</p>
                     </div>
                 </div>
 
@@ -431,14 +458,14 @@
                             </svg>
                         </div>
                         <h4 class="banner__left-descr safety-banner__left-descr"> Свободных мастеров <br>
-                        <span class="safety-count">3 человека</span></h4>
+                            <span class="safety-count">3 человека</span></h4>
                     </div>
                     <div class="banner__right safety-banner__right">
                         <h4 class="banner__right-descr safety-banner__right-descr">
                             <strong class="safety-banner__right-title">Позвоните сейчас</strong>
                             и мастер прибудет к вам в течении 30 минут
                         </h4>
-                            <a href="tel:89998446307" class="safety-banner__btn">Позвонить</a>
+                        <a href="tel:89998446307" class="safety-banner__btn">Позвонить</a>
                     </div>
                 </article>
                 <h3 class="safety__subtitle">Ремонтируем кресла всех производителей</h3>
@@ -521,17 +548,17 @@
                         <div class="swiper-pagination"></div>
                     </div>
 
-                    
-                    
+
+
 
                     <div class="button-prev safety-button-prev">
                         <svg>
-                                <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                            <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
                         </svg>
                     </div>
                     <div class="button-next safety-button-next">
                         <svg>
-                                <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                            <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
                         </svg>
                     </div>
 
@@ -588,18 +615,22 @@
 
         <section class="about">
             <div class="container about__container">
-                
-                <div class="about__text"> 
+
+                <div class="about__text">
                     <h2 class="title about__title">О компании</h2>
                     <div class="about__box">
                         <h3>Ремонт массажных кресел: быстро и с гарантией</h3>
-                    
+
                         <p class="about__descr">
-                            Массажное кресло – эффективный способ решить многие проблемы со здоровьем человека. Однако как бы бережно не эксплуатировалось устройство, через некоторое время ему может понадобиться глубокая диагностика или замена изношенных комплектующих. Компания RME профессионально выполнит ремонт массажных кресел любой сложности, оперативно устранив обнаруженные поломки.
+                            Массажное кресло – эффективный способ решить многие проблемы со здоровьем человека. Однако
+                            как бы бережно не эксплуатировалось устройство, через некоторое время ему может понадобиться
+                            глубокая диагностика или замена изношенных комплектующих. Компания RME профессионально
+                            выполнит ремонт массажных кресел любой сложности, оперативно устранив обнаруженные поломки.
                         </p>
-                            <br>
+                        <br>
                         <h4>Рекомендации по уходу за креслом</h4>
-                        Для длительного срока эксплуатации устройства, специалисты компании рекомендуют соблюдать такие правила:
+                        Для длительного срока эксплуатации устройства, специалисты компании рекомендуют соблюдать такие
+                        правила:
 
                         <ul class="about__list">
                             <li class="about__list-item">устанавливать изделие на ровной поверхности;</li>
@@ -607,31 +638,39 @@
                             <li class="about__list-item">подключать только через заземленную розетку;</li>
                             <li class="about__list-item">не размещать во влажных помещениях.</li>
                         </ul>
-                        
+
                         <h4>Какие виды ремонта бывают?</h4>
                         <p class="about__descr">
                             В компанию можно обратиться с поломками следующих сложностей:
                         </p>
-                        
+
                         <ul class="about__list">
-                            <li class="about__list-item">Простой. К этой категории относят поломку электрической вилки и провода или незначительные повреждения корпуса. Не требуется полный разбор изделия.</li>
-                            <li class="about__list-item"> Средней. Предусматривает полный разбор устройства, с возможностью замены мелких деталей, например, массажных механизмов.</li>
-                            <li class="about__list-item">Высокой. Изделие разбирается полностью, происходит полная замена изношенных и вышедших из строя элементов. В этом случае могут быть заменен блок питания или проведен ремонт электроники кресла.</li>
+                            <li class="about__list-item">Простой. К этой категории относят поломку электрической вилки и
+                                провода или незначительные повреждения корпуса. Не требуется полный разбор изделия.</li>
+                            <li class="about__list-item"> Средней. Предусматривает полный разбор устройства, с
+                                возможностью замены мелких деталей, например, массажных механизмов.</li>
+                            <li class="about__list-item">Высокой. Изделие разбирается полностью, происходит полная
+                                замена изношенных и вышедших из строя элементов. В этом случае могут быть заменен блок
+                                питания или проведен ремонт электроники кресла.</li>
                         </ul>
-                        
+
                         <p class="about__descr">
-                            Длительность ремонта будет зависеть от его сложности и наличия запчастей. При необходимости заказа специфических компонентов срок может увеличится до двух недель.
+                            Длительность ремонта будет зависеть от его сложности и наличия запчастей. При необходимости
+                            заказа специфических компонентов срок может увеличится до двух недель.
                             <br>
-                            После проведения ремонтных работ, владельцу выдается акт гарантийного ремонта. В нем содержится перечень выполненных работ и замененных комплектующих.
+                            После проведения ремонтных работ, владельцу выдается акт гарантийного ремонта. В нем
+                            содержится перечень выполненных работ и замененных комплектующих.
                             <br>
                             Нужен качественный ремонт массажного кресла в Москве? Звоните в RME!
                         </p>
                     </div>
-                        <button class="about__btn">Читать больше</button>
+                    <button class="about__btn">Читать больше</button>
                 </div>
                 <div class="about__image">
                     <picture>
-                        <img src="./assets/img/about-chair.jpg" srcset="./assets/img/about-chair@2x.jpg 2x, ./assets/img/about-chair@3x.jpg 3x" alt="Кресла">
+                        <img src="./assets/img/about-chair.jpg"
+                            srcset="./assets/img/about-chair@2x.jpg 2x, ./assets/img/about-chair@3x.jpg 3x"
+                            alt="Кресла">
                     </picture>
                 </div>
             </div>
@@ -639,325 +678,345 @@
 
         <section class="feedback">
             <h2 class="title feedback__title">Наши работы и отзывы</h2>
-                <div class="container">
-                    
-                    <div class="feedback__main-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="feedback__main-block">
-                                    <div class="feedback__main-image">
+            <div class="container">
 
-                                        <div class="feedback__main-top main-top-1 swiper-slider">
-                                            <div class="swiper-wrapper">
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-1.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-2.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-3.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div> 
+                <div class="feedback__main-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="feedback__main-block">
+                                <div class="feedback__main-image">
 
-                                        <div class="main-thumbs__wrapper">
-                                            <div class="main-thumbs main-thumbs-1">
-                                                <div class="swiper-wrapper">
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-1.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-2.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-3.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <div class="button-prev main-thumbs-prev">
-                                                    <svg>
-                                                        <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="button-next main-thumbs-next">
-                                                    <svg>
-                                                        <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        
-                                    </div>
-                                
-                                    <div class="feedback__main-heading">
-                                        <h3 class="feedback__main-subtitle">
-                                            <span>Ремонт масажного механизма</span><strong>4200 ₽</strong>
-                                        </h3>
-                                        <p class="feedback__main-subtext">Работы выполнены в течении 2 часов без доставки кресла в сервис.</p>
-                                    </div>
-                                    
-                                    
-                                    <div class="feedback__main-info">
-                                        <h4 class="feedback__main-title">Отзыв</h4>
-                                        <p class="feedback__main-descr">
-                                            Заказывали выезд мастера в офис, ремонтировать массажное кресло директора организации. Приехали уже через пол часа после заявки, быстро разобрались что сломано. Сказали частая поломка и запчасти такие всегда в наличии. Ремонт длился со всеми манипуляциями около двух часов. После сборки все заработало.
-                                        </p>
-                                        
-                                        <h4 class="feedback__main-title">Проводил работы</h4>
-                                        <div class="feedback__main-master">
-                                            <div class="feedback__master-img">
+                                    <div class="feedback__main-top main-top-1 swiper-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="main-top__image swiper-slide">
                                                 <picture>
-                                                    <img src="./assets/img/master.png" alt="Мастер">
+                                                    <img src="./assets/img/feedback-lg-1.jpg" alt="Комплектующие">
                                                 </picture>
                                             </div>
-                                            <div class="feedback__master-info">
-                                                <h6 class="feedback__master-name">Андрей</h6>
-                                                <p class="feedback__master-descr">Выездной мастер</p>
-                                                <span>5 лет в сервисе</span>
-                                                
-                                            </div>
-                                                <button class="feedback__master-btn" data-path="patent" data-animation="fadeIn" data-speed="700">Диплом</button>
-
-                                        </div>
-                                        
-                                        
-                                    </div>
-                            
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="feedback__main-block">
-                                    <div class="feedback__main-image">
-
-                                        <div class="feedback__main-top main-top-2 swiper-slider">
-                                            <div class="swiper-wrapper">
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-4.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-5.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-6.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <div class="main-thumbs__wrapper">
-                                            <div class="main-thumbs main-thumbs-2">
-                                                <div class="swiper-wrapper">
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-4.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-5.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-6.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <div class="button-prev main-thumbs-prev">
-                                                    <svg>
-                                                        <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="button-next main-thumbs-next">
-                                                    <svg>
-                                                        <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        
-                                    </div>
-                                
-                                    <div class="feedback__main-heading">
-                                        <h3 class="feedback__main-subtitle">
-                                            <span>Ремонт материнской платы</span><strong>2500 ₽</strong>
-                                        </h3>
-                                        <p class="feedback__main-subtext">Работы выполнены в течении 1 часа без доставки кресла в сервис.</p>
-                                    </div>
-                                    
-                                    
-                                    <div class="feedback__main-info">
-                                        <h4 class="feedback__main-title">Отзыв</h4>
-                                        <p class="feedback__main-descr">
-                                            Кресло перестало включаться, вызвали мастера с этого сервиса по советам знакомых. Ребята адекватные, приехали через час. Выявили поломки, спросили можно ли производить паяльные работы в доме на что я дал согласие. Ремонт занял всего ничего, час делов. Сказали что-то там сгорело или вздулось, не разбираюсь. Главное, чтоб работало. Дали гарантию на проделанные работы, значит за качество отвечают. 
-                                        </p>
-                                        
-                                        <h4 class="feedback__main-title">Проводил работы</h4>
-                                        <div class="feedback__main-master">
-                                            <div class="feedback__master-img">
+                                            <div class="main-top__image swiper-slide">
                                                 <picture>
-                                                    <img src="./assets/img/master-2.jpg" alt="Мастер">
+                                                    <img src="./assets/img/feedback-lg-2.jpg" alt="Комплектующие">
                                                 </picture>
                                             </div>
-                                            <div class="feedback__master-info">
-                                                <h6 class="feedback__master-name">Петр</h6>
-                                                <p class="feedback__master-descr">Специалист по электронике</p>
-                                                <span>3 года в сервисе</span>
-                                                
-                                            </div>
-                                                <button class="feedback__master-btn" data-path="patent" data-animation="fadeIn" data-speed="700">Диплом</button>
-
-                                        </div>
-                                        
-                                        
-                                    </div>
-                            
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="feedback__main-block">
-                                    <div class="feedback__main-image">
-
-                                        <div class="feedback__main-top main-top-3 swiper-slider">
-                                            <div class="swiper-wrapper">
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-7.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-8.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-9.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                                <div class="main-top__image swiper-slide">
-                                                    <picture>
-                                                        <img src="./assets/img/feedback-lg-10.jpg" alt="Комплектующие">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div> 
-
-                                        <div class="main-thumbs__wrapper">
-                                            <div class="main-thumbs main-thumbs-3">
-                                                <div class="swiper-wrapper">
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-7.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-8.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-9.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    <div class="main-thumbs__image swiper-slide">
-                                                        <picture>
-                                                            <img src="./assets/img/thumb-10.jpg" alt="Комплектующие">
-                                                        </picture>
-                                                    </div>
-                                                    
-                                                </div>
-
-                                                <div class="button-prev main-thumbs-prev">
-                                                    <svg>
-                                                        <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="button-next main-thumbs-next">
-                                                    <svg>
-                                                        <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        
-                                    </div>
-                                
-                                    <div class="feedback__main-heading">
-                                        <h3 class="feedback__main-subtitle">
-                                            <span>Замена обшивки масажного кресла</span><strong>15 900 ₽</strong>
-                                        </h3>
-                                        <p class="feedback__main-subtext">Работы выполнены в течении 3 дней с доставкой в сервис.</p>
-                                    </div>
-                                    
-                                    
-                                    <div class="feedback__main-info">
-                                        <h4 class="feedback__main-title">Отзыв</h4>
-                                        <p class="feedback__main-descr">
-                                            Обшивка кресла уже давно пришла в негодность, нашли сервис в котором занимаются перешивкой в интернете. Решили обратиться, мастера сами приехали, забрали кресло. Предложили на выбор большое количество материала, выбрали то что, понравились на ощупь. Переживали что будут долго тянуть как это обычно бывает, но удивились что уже через 3 позвонили и сказали, что можно забирать. Мы воспользовались транспортом компании, у нас нет таких больших машин для перевозки.
-                                        </p>
-                                        
-                                        <h4 class="feedback__main-title">Проводил работы</h4>
-                                        <div class="feedback__main-master">
-                                            <div class="feedback__master-img">
+                                            <div class="main-top__image swiper-slide">
                                                 <picture>
-                                                    <img src="./assets/img/master-3.jpg" alt="Мастер">
+                                                    <img src="./assets/img/feedback-lg-3.jpg" alt="Комплектующие">
                                                 </picture>
                                             </div>
-                                            <div class="feedback__master-info">
-                                                <h6 class="feedback__master-name">Артём</h6>
-                                                <p class="feedback__master-descr">Сотрудник сервисного центра</p>
-                                                <span>2 года в сервисе</span>
-                                                
+                                        </div>
+                                    </div>
+
+                                    <div class="main-thumbs__wrapper">
+                                        <div class="main-thumbs main-thumbs-1">
+                                            <div class="swiper-wrapper">
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-1.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-2.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-3.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+
                                             </div>
-                                                <button class="feedback__master-btn" data-path="patent" data-animation="fadeIn" data-speed="700">Диплом</button>
+
+                                            <div class="button-prev main-thumbs-prev">
+                                                <svg>
+                                                    <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="button-next main-thumbs-next">
+                                                <svg>
+                                                    <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="feedback__main-heading">
+                                    <h3 class="feedback__main-subtitle">
+                                        <span>Ремонт масажного механизма</span><strong>4200 ₽</strong>
+                                    </h3>
+                                    <p class="feedback__main-subtext">Работы выполнены в течении 2 часов без доставки
+                                        кресла в сервис.</p>
+                                </div>
+
+
+                                <div class="feedback__main-info">
+                                    <h4 class="feedback__main-title">Отзыв</h4>
+                                    <p class="feedback__main-descr">
+                                        Заказывали выезд мастера в офис, ремонтировать массажное кресло директора
+                                        организации. Приехали уже через пол часа после заявки, быстро разобрались что
+                                        сломано. Сказали частая поломка и запчасти такие всегда в наличии. Ремонт длился
+                                        со всеми манипуляциями около двух часов. После сборки все заработало.
+                                    </p>
+
+                                    <h4 class="feedback__main-title">Проводил работы</h4>
+                                    <div class="feedback__main-master">
+                                        <div class="feedback__master-img">
+                                            <picture>
+                                                <img src="./assets/img/master.png" alt="Мастер">
+                                            </picture>
+                                        </div>
+                                        <div class="feedback__master-info">
+                                            <h6 class="feedback__master-name">Андрей</h6>
+                                            <p class="feedback__master-descr">Выездной мастер</p>
+                                            <span>5 лет в сервисе</span>
 
                                         </div>
-                                        
-                                        
+                                        <button class="feedback__master-btn" data-path="patent" data-animation="fadeIn"
+                                            data-speed="700">Диплом</button>
+
                                     </div>
-                            
+
+
                                 </div>
+
                             </div>
                         </div>
-                    </div>  
-                </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__main-block">
+                                <div class="feedback__main-image">
 
-                <div class="feedback__nav">
-                    <div class="button-prev feedback-button-prev">
-                        <svg>
-                            <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
-                        </svg>
-                    </div>
-                    <div class="button-next feedback-button-next">
-                        <svg>
-                            <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                        </svg>
+                                    <div class="feedback__main-top main-top-2 swiper-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-4.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-5.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-6.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-thumbs__wrapper">
+                                        <div class="main-thumbs main-thumbs-2">
+                                            <div class="swiper-wrapper">
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-4.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-5.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-6.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="button-prev main-thumbs-prev">
+                                                <svg>
+                                                    <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="button-next main-thumbs-next">
+                                                <svg>
+                                                    <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="feedback__main-heading">
+                                    <h3 class="feedback__main-subtitle">
+                                        <span>Ремонт материнской платы</span><strong>2500 ₽</strong>
+                                    </h3>
+                                    <p class="feedback__main-subtext">Работы выполнены в течении 1 часа без доставки
+                                        кресла в сервис.</p>
+                                </div>
+
+
+                                <div class="feedback__main-info">
+                                    <h4 class="feedback__main-title">Отзыв</h4>
+                                    <p class="feedback__main-descr">
+                                        Кресло перестало включаться, вызвали мастера с этого сервиса по советам
+                                        знакомых. Ребята адекватные, приехали через час. Выявили поломки, спросили можно
+                                        ли производить паяльные работы в доме на что я дал согласие. Ремонт занял всего
+                                        ничего, час делов. Сказали что-то там сгорело или вздулось, не разбираюсь.
+                                        Главное, чтоб работало. Дали гарантию на проделанные работы, значит за качество
+                                        отвечают.
+                                    </p>
+
+                                    <h4 class="feedback__main-title">Проводил работы</h4>
+                                    <div class="feedback__main-master">
+                                        <div class="feedback__master-img">
+                                            <picture>
+                                                <img src="./assets/img/master-2.jpg" alt="Мастер">
+                                            </picture>
+                                        </div>
+                                        <div class="feedback__master-info">
+                                            <h6 class="feedback__master-name">Петр</h6>
+                                            <p class="feedback__master-descr">Специалист по электронике</p>
+                                            <span>3 года в сервисе</span>
+
+                                        </div>
+                                        <button class="feedback__master-btn" data-path="patent" data-animation="fadeIn"
+                                            data-speed="700">Диплом</button>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback__main-block">
+                                <div class="feedback__main-image">
+
+                                    <div class="feedback__main-top main-top-3 swiper-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-7.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-8.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-9.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                            <div class="main-top__image swiper-slide">
+                                                <picture>
+                                                    <img src="./assets/img/feedback-lg-10.jpg" alt="Комплектующие">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-thumbs__wrapper">
+                                        <div class="main-thumbs main-thumbs-3">
+                                            <div class="swiper-wrapper">
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-7.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-8.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-9.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+                                                <div class="main-thumbs__image swiper-slide">
+                                                    <picture>
+                                                        <img src="./assets/img/thumb-10.jpg" alt="Комплектующие">
+                                                    </picture>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="button-prev main-thumbs-prev">
+                                                <svg>
+                                                    <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="button-next main-thumbs-next">
+                                                <svg>
+                                                    <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="feedback__main-heading">
+                                    <h3 class="feedback__main-subtitle">
+                                        <span>Замена обшивки масажного кресла</span><strong>15 900 ₽</strong>
+                                    </h3>
+                                    <p class="feedback__main-subtext">Работы выполнены в течении 3 дней с доставкой в
+                                        сервис.</p>
+                                </div>
+
+
+                                <div class="feedback__main-info">
+                                    <h4 class="feedback__main-title">Отзыв</h4>
+                                    <p class="feedback__main-descr">
+                                        Обшивка кресла уже давно пришла в негодность, нашли сервис в котором занимаются
+                                        перешивкой в интернете. Решили обратиться, мастера сами приехали, забрали
+                                        кресло. Предложили на выбор большое количество материала, выбрали то что,
+                                        понравились на ощупь. Переживали что будут долго тянуть как это обычно бывает,
+                                        но удивились что уже через 3 позвонили и сказали, что можно забирать. Мы
+                                        воспользовались транспортом компании, у нас нет таких больших машин для
+                                        перевозки.
+                                    </p>
+
+                                    <h4 class="feedback__main-title">Проводил работы</h4>
+                                    <div class="feedback__main-master">
+                                        <div class="feedback__master-img">
+                                            <picture>
+                                                <img src="./assets/img/master-3.jpg" alt="Мастер">
+                                            </picture>
+                                        </div>
+                                        <div class="feedback__master-info">
+                                            <h6 class="feedback__master-name">Артём</h6>
+                                            <p class="feedback__master-descr">Сотрудник сервисного центра</p>
+                                            <span>2 года в сервисе</span>
+
+                                        </div>
+                                        <button class="feedback__master-btn" data-path="patent" data-animation="fadeIn"
+                                            data-speed="700">Диплом</button>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+            </div>
+
+            <div class="feedback__nav">
+                <div class="button-prev feedback-button-prev">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                    </svg>
+                </div>
+                <div class="button-next feedback-button-next">
+                    <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                    </svg>
+                </div>
+            </div>
+
         </section>
 
         <section class="contacts">
@@ -969,7 +1028,7 @@
                             <p> <strong>Адрес:</strong> г. Москва, ул. Усиевича, д. 4 </p>
                         </li>
                         <li class="contacts-block__item">
-                            <p> <strong>Режим работы:</strong>  с 9:00 до 21:00, без выходных. </p>
+                            <p> <strong>Режим работы:</strong> с 9:00 до 21:00, без выходных. </p>
                         </li>
                         <li class="contacts-block__item">
                             <span>Заявки принимаются круглосуточно.</span>
@@ -978,11 +1037,13 @@
                             <a href="tel:89998446307"> <strong>Телефон: </strong>8 999 844 63 07</a>
                         </li>
                         <li class="contacts-block__item">
-                            <a href="mailto:info@kreslaremont.ru"> <strong>Email:</strong> info@kreslaremont.ru</a> </p>
+                            <a href="mailto:info@kreslaremont.ru"> <strong>Email:</strong> info@kreslaremont.ru</a>
                         </li>
 
                         <div class="contacts-map">
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8b332a0aacf59dec0aa87b85cc0cf4d31f2c994336c9a9148e40477dec668b7c&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                            <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8b332a0aacf59dec0aa87b85cc0cf4d31f2c994336c9a9148e40477dec668b7c&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false">
+                            </script>
                         </div>
 
                         <li class="contacts-block__item contacts-social">
@@ -1011,23 +1072,24 @@
                     <form class="contacts__form">
                         <input type="hidden" name="form_subject" value="Заявка с сайта">
                         <div class="just-validate-tooltip-container">
-                           <input class="contacts__phone" type="tel" name="tel" data-validate-field="tel" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _"> 
+                            <input class="contacts__phone" type="tel" name="tel" data-validate-field="tel"
+                                placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
                         </div>
-                        
-                        
+
+
                         <button class="contacts__btn">Оставить заявку</button>
                     </form>
                 </div>
-                
-                
+
+
             </div>
         </section>
 
-        
-        
-       
 
-</main>
+
+
+
+    </main>
 
     <footer class="footer">
         <div class="container footer__container">
@@ -1036,57 +1098,58 @@
                     <use xlink:href="assets/img/sprite.svg#logo"></use>
                 </svg>
             </a>
-            <span class="footer__copy"> © 2000-2020 <a href="#" class="footer__link">Пользовательское соглашение</a></span>
+            <span class="footer__copy"> © 2000-2020 <a href="#" class="footer__link">Пользовательское
+                    соглашение</a></span>
             <div class="footer__payment">
                 <picture>
-                    <img src="./assets/img/pay.png" srcset="./assets/img/pay@2x.png 2x, ./assets/img/pay@3x.png 3x," alt="Оплата картой">
+                    <img src="./assets/img/pay.png" srcset="./assets/img/pay@2x.png 2x, ./assets/img/pay@3x.png 3x"
+                        alt="Оплата картой">
                 </picture>
-
-                <!-- <img src="./assets/img/hero-chair.png" srcset="./assets/img/hero-chair@2x.png 2x, ./assets/img/hero-chair@3x.png 3x," alt="Кресло"> -->
             </div>
         </div>
     </footer>
 
     <div class="modal">
-		<div class="modal__container" data-target="first">
+        <div class="modal__container" data-target="first">
             <button class="modal-close">
                 <svg>
                     <use xlink:href="assets/img/sprite.svg#close"></use>
                 </svg>
             </button>
-            
-			<div class="modal-content">
+
+            <div class="modal-content">
                 <h3 class="modal-title">Обратный звонок</h3>
                 <p class="modal-descr">Оставьте ваш номер телефона и наш менеджер перезвонит вам как можно быстрее</p>
-				<form class="modal-form form">
+                <form class="modal-form form">
                     <input type="hidden" name="form_subject" value="Заявка с сайта">
                     <div class="just-validate-tooltip-container">
                         <input type="text" name="name" data-validate-field="name" placeholder="Ваше имя">
                     </div>
                     <div class="just-validate-tooltip-container">
-                        <input type="tel" name="tel" data-validate-field="tel" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
+                        <input type="tel" name="tel" data-validate-field="tel"
+                            placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
                     </div>
-                   
-                    
+
+
                     <button class="modal-btn" type="submit">Перезвоните мне</button>
                 </form>
-				
-			</div>
+
+            </div>
         </div>
-        
+
         <div class="modal__container patent-container" data-target="patent">
             <button class="modal-close">
                 <svg>
                     <use xlink:href="assets/img/sprite.svg#close"></use>
                 </svg>
             </button>
-            
-			<div class="modal-content">
+
+            <div class="modal-content">
                 <img src="./assets/img/diplom.jpg" alt="Диплом">
-			</div>
-		</div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="tape">
         <button class="tape-close">
             <svg>
@@ -1094,30 +1157,31 @@
             </svg>
         </button>
         <div class="container tape__container">
-            
-                <div class="tape-top">
-                    <h6 class="tape__title">Закажите в течении <span class="tape-count">9:03</span> и получите скидку до 15%</h6>
-                    <form class="tape__form">
-                        <input type="hidden" name="form_subject" value="Заявка с сайта">
-                        <div class="just-validate-tooltip-container"><input class="tape__input" name="tel" type="tel" data-validate-field="tel" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
-                        </div>
-                        
-                        <button class="tape__btn">Вызвать мастера</button>
-                    </form>
-                </div>
-                <p class="tape__descr">Даю согласие на обработку моих 
-                    <a href="#" class="tape__link">персональных данных</a>
-                </p>
-            
-            
+            <div class="tape-top">
+                <h6 class="tape__title">Закажите в течении <span class="tape-count">9:03</span> и получите скидку до 15%
+                </h6>
+                <form class="tape__form">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта">
+                    <div class="just-validate-tooltip-container"><input class="tape__input" name="tel" type="tel"
+                            data-validate-field="tel" placeholder="+ 7 ( _ _ _) _ _ _  _ _  _ _">
+                    </div>
+
+                    <button class="tape__btn">Вызвать мастера</button>
+                </form>
+            </div>
+            <p class="tape__descr">Даю согласие на обработку моих
+                <a href="#" class="tape__link">персональных данных</a>
+            </p>
+
+
         </div>
     </div>
 
-    
-      
+
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
     <script src="./js/script.js"></script>
 </body>
-</html>
 
+</html>

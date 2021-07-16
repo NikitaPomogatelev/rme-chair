@@ -2,7 +2,8 @@ import Swiper, { Navigation } from 'swiper';
 
 Swiper.use([Navigation]);
 
-    const bannerContainer = document.querySelector('.hero-section__slider');
+const bannerSlider = () => {
+  const bannerContainer = document.querySelector('.hero-section__slider');
 
     const bannerSwiper = new Swiper(bannerContainer, {
        
@@ -26,3 +27,7 @@ Swiper.use([Navigation]);
 
         
     });
+}
+export default bannerSlider;
+
+    

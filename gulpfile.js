@@ -1,6 +1,6 @@
 const {src, dest, parallel, series, watch} = require('gulp'),
       del = require('del'),
-      sass = require('gulp-sass'),
+      sass = require('gulp-sass')(require('sass')),
       autoprefixer = require('gulp-autoprefixer'),
       notify = require('gulp-notify'),
       sourcemaps = require('gulp-sourcemaps');
@@ -11,20 +11,21 @@ const {src, dest, parallel, series, watch} = require('gulp'),
       svgSprite = require('gulp-svg-sprite'),
       webpack = require('webpack-stream'),
       rename = require('gulp-rename'),
-      fs = require('fs'),
       ttf2woff = require('gulp-ttf2woff'),
       ttf2woff2 = require('gulp-ttf2woff2'),
-      tiny = require('gulp-tinypng-compress');
+      tiny = require('gulp-tinypng-compress'),
+      gcmq = require('gulp-group-css-media-queries')
 
 
 const dist = './dist/'
+// const dist = './../../Server/OSPanel/domains/oxem-test/'
 
 const clean = () => {
     return del([dist])
 }
 
 const styles = () => {
-    return src('./src/assets/sass/**/*.{sass, scss}')
+    return src(['./src/assets/sass/**/*.sass', './src/assets/sass/**/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass({
         outputStyle: 'expanded'
@@ -35,10 +36,16 @@ const styles = () => {
     .pipe(sourcemaps.write('.'))
     .pipe(dest(dist + './assets/css/'))
     .pipe(browserSync.stream());
-
 }
 
+const stylesQuery = () => {
+    return src('./dist/assets/css/style.min.css')
+    .pipe(gcmq())
+    .pipe(dest(dist + './assets/css/'));
+    
+}
 
+exports.stylesQuery = stylesQuery;
 
 const copyHtml = () => {
     return src('./src/**/*.html')
@@ -47,9 +54,17 @@ const copyHtml = () => {
 }
 
 const copyImg = () => {
-    return src('./src/assets/img/**/*.{jpg,jpeg,png,ico,webmanifest,xml}')
+    return src('./src/assets/img/*.{jpg,jpeg,webp,svg,png,ico,webmanifest,xml}')
     .pipe(dest(dist + 'assets/img'))
-    
+}
+
+const copyWebp = () => {
+    return src('./src/assets/img/webp/*.webp')
+    .pipe(dest(dist + 'assets/img/webp'))
+}
+const copyFavicons = () => {
+    return src('./src/assets/img/favicons/*.{svg,png,ico,webmanifest,xml}')
+    .pipe(dest(dist + 'assets/img/favicons'))
 }
 
 
@@ -131,9 +146,11 @@ const watchFiles = () => {
 
     watch('./src/assets/sass/**/*.{sass, scss}', styles);
     watch('./src/**/*.html', copyHtml);
+    watch('./src/assets/img/webp/*.webp', copyWebp);
+    watch('./src/assets/img/favicons/*.{svg,png,ico,webmanifest,xml}', copyFavicons);
     watch('./src/assets/img/**/*.{jpg,jpeg,png,ico,webmanifest,xml}', copyImg);
     watch('./src/assets/fonts/**/*.*', copyFonts);
-    watch('./src/assets/img/**/*.svg', svgSprites);
+    watch('./src/assets/img/svg/*.svg', svgSprites);
     watch('./src/js/**/*.js', scripts);
 }
 
@@ -146,16 +163,17 @@ exports.copyImg = copyImg;
 
 
 
-exports.default = series(clean, parallel(copyHtml, scripts, copyImg, copyFonts, resources, svgSprites), styles, watchFiles);
+exports.default = series(clean, parallel(copyHtml, scripts, copyImg, copyWebp, copyFavicons, copyFonts, resources, svgSprites), styles, watchFiles);
 
 const stylesBuild = () => {
-    return src('./src/assets/sass/**/*.{sass, scss}')
+    return src(['./src/assets/sass/**/*.sass', './src/assets/sass/**/*.scss'])
     .pipe(sass({
         outputStyle: 'compressed'
     }).on('error', notify.onError()))
     .pipe(autoprefixer({
         cascade: false,
     }))
+    .pipe(gcmq())
     .pipe(rename({
         suffix: '.min'
     }))
@@ -163,6 +181,13 @@ const stylesBuild = () => {
     .pipe(browserSync.stream());
 
 }
+
+
+const copySvgForBuild = () => {
+    return src('./src/assets/img/*.svg')
+    .pipe(dest(dist + 'assets/img'))
+}
+
 
 const tinypng = () => {
     // return src('./src/assets/img/*.{jpg,jpeg,png')
@@ -230,6 +255,4 @@ const minSvgSprites = () => {
 
 exports.minSvgSprites = minSvgSprites;
 
-exports.build = series(clean, parallel(copyHtml, copyFonts, scriptsBuild, resources, minSvgSprites), stylesBuild, tinypng);
-
-
+exports.build = series(clean, parallel(copyHtml, copyFonts, scriptsBuild, copyWebp, copyFavicons, resources, minSvgSprites), stylesBuild, tinypng, copySvgForBuild);

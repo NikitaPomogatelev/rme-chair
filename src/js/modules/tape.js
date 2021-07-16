@@ -1,44 +1,40 @@
-const closeTape = document.querySelector('.tape-close'),
+import Timer from './timer';
+
+const tape = () => {
+    const closeTape = document.querySelector('.tape-close'),
       tape = document.querySelector('.tape'),
       countTape = document.querySelector('.tape-count');
-
-
-window.addEventListener('scroll', () => {
-    let scrollY = window.scrollY,
-        featuresOffset = document.querySelector('.features').offsetTop;
-
-    if (scrollY >= featuresOffset - 500) {
-        tape.style.bottom = '0';
         
-    }
-    
-});
+      let isOpen = false;
 
-const startTimer = (time = 600)  => {
-    let timer = setInterval( () => {
-        
-        let minutes = parseInt(time / 60, 10);
-        let seconds = parseInt(time % 60, 10);
+        let timer1 = new Timer('.tape-count', 600);
+        timer1.start();
 
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        countTape.textContent = minutes + ":" + seconds;
+        window.addEventListener('scroll', (e) => {
+            let scrollY = window.scrollY,
+                featuresOffset = document.querySelector('.features').offsetTop;
         
-        time--;
-        if (time < 0) {
-            clearInterval(timer);
-        }
-        
-    }, 1000);
+            if (!isOpen && (scrollY >= featuresOffset - 400)) {
+                tape.style.bottom = '0';
+                isOpen = true;
+                e.stopPropagation();
+            } 
+          
+        });
+
+        closeTape.addEventListener('click', () =>{
+            tape.style.bottom = '-50%';
+            timer1.stop();
+        });
+
+
 }
-
-startTimer();
-
+export default tape;
 
 
 
 
-closeTape.addEventListener('click', () =>{
-    tape.style.bottom = '-50%';
-    tape.remove();
-});
+
+
+
 

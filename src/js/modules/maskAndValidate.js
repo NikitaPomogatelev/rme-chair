@@ -1,6 +1,7 @@
-import JustValidate from '../just-validate';
+import "just-validate/dist/js/just-validate";
 import Inputmask from "inputmask";
 
+const validate = () => {
 let inputs = document.querySelectorAll('input[type="tel"]');
 
 let im = new Inputmask('+7 (999) 999-99-99');
@@ -8,9 +9,10 @@ im.mask(inputs);
 
 
 
-let validateForms = function(selector, rules, successModal, yaGoal) {
+let validateForms = function(selector, rules, messages) {
 	new window.JustValidate(selector, {
 		rules: rules,
+		messages: messages,
 		submitHandler: function(form) {
 			let formData = new FormData(form);
 
@@ -41,6 +43,13 @@ validateForms('.modal-form', {
         required: true 
     },
 
+}, {
+	name: {
+		required: "Вы должны ввести имя"
+	},
+	tel: {
+		required: "Вы должны ввести телефон"
+	},
 });
 
 validateForms('.tape__form', {
@@ -48,10 +57,20 @@ validateForms('.tape__form', {
         required: true,
         remote: 'Это обязательное'
     },
+},  {
+	tel: {
+		required: "Вы должны ввести телефон"
+	},
 })
 validateForms('.contacts__form', {
     tel: { 
         required: true,
         remote: 'Это обязательное'
     },
+},  {
+	tel: {
+		required: "Вы должны ввести телефон"
+	},
 })
+}
+export default validate;
